@@ -1,2 +1,2 @@
 # Projects
-Repository for smaller projects
+Random programs, scripts and projects
