@@ -1,12 +1,137 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\Robin\\Desktop\\Code\\Visual Studio\\Projects\\Collatz-type problem\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Robin\\Desktop\\Code\\Visual Studio\\Projects\\Collatz-type problem\\Collatz-type problem v5\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Collatz-type problem v5\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Robin\\Desktop\\Code\\Visual Studio\\Projects\\Collatz-type problem\\Collatz-type problem v5\\BinaryRewriteStudio.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Collatz-type problem v5\\BinaryRewriteStudio.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Robin\\Downloads\\Program_FIXED(1).cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Robin\\Downloads\\Program_FIXED.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Robin\\Desktop\\Code\\Visual Studio\\Projects\\Collatz-type problem\\Collatz-type problem v5\\Theme.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Collatz-type problem v5\\Theme.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Robin\\Desktop\\Code\\Visual Studio\\Projects\\Collatz-type problem\\Collatz-type problem v5\\ChartControl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Collatz-type problem v5\\ChartControl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Robin\\Desktop\\Code\\Visual Studio\\Projects\\Collatz-type problem\\Collatz-type problem v5\\MainWindow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Collatz-type problem v5\\MainWindow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program_FIXED(1).cs",
+              "DocumentMoniker": "C:\\Users\\Robin\\Downloads\\Program_FIXED(1).cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\Downloads\\Program_FIXED(1).cs",
+              "ToolTip": "C:\\Users\\Robin\\Downloads\\Program_FIXED(1).cs",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\Downloads\\Program_FIXED(1).cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-31T06:54:29.88Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program_FIXED.cs",
+              "DocumentMoniker": "C:\\Users\\Robin\\Downloads\\Program_FIXED.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\Downloads\\Program_FIXED.cs",
+              "ToolTip": "C:\\Users\\Robin\\Downloads\\Program_FIXED.cs*",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\Downloads\\Program_FIXED.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-31T06:53:19.518Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "BinaryRewriteStudio.csproj",
+              "DocumentMoniker": "C:\\Users\\Robin\\Desktop\\Code\\Visual Studio\\Projects\\Collatz-type problem\\Collatz-type problem v5\\BinaryRewriteStudio.csproj",
+              "RelativeDocumentMoniker": "Collatz-type problem v5\\BinaryRewriteStudio.csproj",
+              "ToolTip": "C:\\Users\\Robin\\Desktop\\Code\\Visual Studio\\Projects\\Collatz-type problem\\Collatz-type problem v5\\BinaryRewriteStudio.csproj",
+              "RelativeToolTip": "Collatz-type problem v5\\BinaryRewriteStudio.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-05-31T06:50:27.054Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Theme.cs",
+              "DocumentMoniker": "C:\\Users\\Robin\\Desktop\\Code\\Visual Studio\\Projects\\Collatz-type problem\\Collatz-type problem v5\\Theme.cs",
+              "RelativeDocumentMoniker": "Collatz-type problem v5\\Theme.cs",
+              "ToolTip": "C:\\Users\\Robin\\Desktop\\Code\\Visual Studio\\Projects\\Collatz-type problem\\Collatz-type problem v5\\Theme.cs",
+              "RelativeToolTip": "Collatz-type problem v5\\Theme.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAAADEAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-31T06:48:56.829Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ChartControl.cs",
+              "DocumentMoniker": "C:\\Users\\Robin\\Desktop\\Code\\Visual Studio\\Projects\\Collatz-type problem\\Collatz-type problem v5\\ChartControl.cs",
+              "RelativeDocumentMoniker": "Collatz-type problem v5\\ChartControl.cs",
+              "ToolTip": "C:\\Users\\Robin\\Desktop\\Code\\Visual Studio\\Projects\\Collatz-type problem\\Collatz-type problem v5\\ChartControl.cs",
+              "RelativeToolTip": "Collatz-type problem v5\\ChartControl.cs",
+              "ViewState": "AgIAAKYAAAAAAAAAAAAAALsAAABVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-31T06:47:17.672Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "MainWindow.cs",
+              "DocumentMoniker": "C:\\Users\\Robin\\Desktop\\Code\\Visual Studio\\Projects\\Collatz-type problem\\Collatz-type problem v5\\MainWindow.cs",
+              "RelativeDocumentMoniker": "Collatz-type problem v5\\MainWindow.cs",
+              "ToolTip": "C:\\Users\\Robin\\Desktop\\Code\\Visual Studio\\Projects\\Collatz-type problem\\Collatz-type problem v5\\MainWindow.cs",
+              "RelativeToolTip": "Collatz-type problem v5\\MainWindow.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAJgFAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-31T06:47:06.296Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Robin\\Desktop\\Code\\Visual Studio\\Projects\\Collatz-type problem\\Collatz-type problem v5\\Program.cs",
+              "RelativeDocumentMoniker": "Collatz-type problem v5\\Program.cs",
+              "ToolTip": "C:\\Users\\Robin\\Desktop\\Code\\Visual Studio\\Projects\\Collatz-type problem\\Collatz-type problem v5\\Program.cs",
+              "RelativeToolTip": "Collatz-type problem v5\\Program.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAAAA8AAABXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-31T06:43:25.658Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }
