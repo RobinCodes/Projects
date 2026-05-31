@@ -13,3 +13,18 @@ C:\Users\Robin\Desktop\Code\Visual Studio\Projects\TwoNMod3Search\TwoNMod3Search
 C:\Users\Robin\Desktop\Code\Visual Studio\Projects\TwoNMod3Search\TwoNMod3Search\obj\Debug\net8.0\TwoNMod3Search.pdb
 C:\Users\Robin\Desktop\Code\Visual Studio\Projects\TwoNMod3Search\TwoNMod3Search\obj\Debug\net8.0\TwoNMod3Search.genruntimeconfig.cache
 C:\Users\Robin\Desktop\Code\Visual Studio\Projects\TwoNMod3Search\TwoNMod3Search\obj\Debug\net8.0\ref\TwoNMod3Search.dll
+C:\Users\Robin\Desktop\Code\Visual Studio\Projects\Divisibility problem\TwoNMod3Search\bin\Debug\net8.0\TwoNMod3Search.exe
+C:\Users\Robin\Desktop\Code\Visual Studio\Projects\Divisibility problem\TwoNMod3Search\bin\Debug\net8.0\TwoNMod3Search.deps.json
+C:\Users\Robin\Desktop\Code\Visual Studio\Projects\Divisibility problem\TwoNMod3Search\bin\Debug\net8.0\TwoNMod3Search.runtimeconfig.json
+C:\Users\Robin\Desktop\Code\Visual Studio\Projects\Divisibility problem\TwoNMod3Search\bin\Debug\net8.0\TwoNMod3Search.dll
+C:\Users\Robin\Desktop\Code\Visual Studio\Projects\Divisibility problem\TwoNMod3Search\bin\Debug\net8.0\TwoNMod3Search.pdb
+C:\Users\Robin\Desktop\Code\Visual Studio\Projects\Divisibility problem\TwoNMod3Search\obj\Debug\net8.0\TwoNMod3Search.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Robin\Desktop\Code\Visual Studio\Projects\Divisibility problem\TwoNMod3Search\obj\Debug\net8.0\TwoNMod3Search.AssemblyInfoInputs.cache
+C:\Users\Robin\Desktop\Code\Visual Studio\Projects\Divisibility problem\TwoNMod3Search\obj\Debug\net8.0\TwoNMod3Search.AssemblyInfo.cs
+C:\Users\Robin\Desktop\Code\Visual Studio\Projects\Divisibility problem\TwoNMod3Search\obj\Debug\net8.0\TwoNMod3Search.csproj.CoreCompileInputs.cache
+C:\Users\Robin\Desktop\Code\Visual Studio\Projects\Divisibility problem\TwoNMod3Search\obj\Debug\net8.0\TwoNMod3Search.sourcelink.json
+C:\Users\Robin\Desktop\Code\Visual Studio\Projects\Divisibility problem\TwoNMod3Search\obj\Debug\net8.0\TwoNMod3Search.dll
+C:\Users\Robin\Desktop\Code\Visual Studio\Projects\Divisibility problem\TwoNMod3Search\obj\Debug\net8.0\refint\TwoNMod3Search.dll
+C:\Users\Robin\Desktop\Code\Visual Studio\Projects\Divisibility problem\TwoNMod3Search\obj\Debug\net8.0\TwoNMod3Search.pdb
+C:\Users\Robin\Desktop\Code\Visual Studio\Projects\Divisibility problem\TwoNMod3Search\obj\Debug\net8.0\TwoNMod3Search.genruntimeconfig.cache
+C:\Users\Robin\Desktop\Code\Visual Studio\Projects\Divisibility problem\TwoNMod3Search\obj\Debug\net8.0\ref\TwoNMod3Search.dll

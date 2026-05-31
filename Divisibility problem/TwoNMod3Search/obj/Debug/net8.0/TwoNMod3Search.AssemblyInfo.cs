@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TwoNMod3Search")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7ef5e6fb413fbfb9eee15d01b62752bd333f1ac0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d4ba2815f851c976bd92bba5a3b590ae8461935b")]
 [assembly: System.Reflection.AssemblyProductAttribute("TwoNMod3Search")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TwoNMod3Search")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

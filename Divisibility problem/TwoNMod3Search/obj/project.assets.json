@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Robin\\Desktop\\Code\\Visual Studio\\Projects\\TwoNMod3Search\\TwoNMod3Search\\TwoNMod3Search.csproj",
+      "projectUniqueName": "C:\\Users\\Robin\\Desktop\\Code\\Visual Studio\\Projects\\Divisibility problem\\TwoNMod3Search\\TwoNMod3Search.csproj",
       "projectName": "TwoNMod3Search",
-      "projectPath": "C:\\Users\\Robin\\Desktop\\Code\\Visual Studio\\Projects\\TwoNMod3Search\\TwoNMod3Search\\TwoNMod3Search.csproj",
+      "projectPath": "C:\\Users\\Robin\\Desktop\\Code\\Visual Studio\\Projects\\Divisibility problem\\TwoNMod3Search\\TwoNMod3Search.csproj",
       "packagesPath": "C:\\Users\\Robin\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Robin\\Desktop\\Code\\Visual Studio\\Projects\\TwoNMod3Search\\TwoNMod3Search\\obj\\",
+      "outputPath": "C:\\Users\\Robin\\Desktop\\Code\\Visual Studio\\Projects\\Divisibility problem\\TwoNMod3Search\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
