@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BinaryRewriteStudio")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+47ea288aa77233d36cd08092aabec25428da4e41")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5fe60dd5db8c68598b66ba52a042d75efc54afa7")]
 [assembly: System.Reflection.AssemblyProductAttribute("BinaryRewriteStudio")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BinaryRewriteStudio")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

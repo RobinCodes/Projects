@@ -46,10 +46,8 @@
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\Downloads\\Program_FIXED(1).cs",
               "ToolTip": "C:\\Users\\Robin\\Downloads\\Program_FIXED(1).cs",
               "RelativeToolTip": "..\\..\\..\\..\\..\\Downloads\\Program_FIXED(1).cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-31T06:54:29.88Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-31T06:54:29.88Z"
             },
             {
               "$type": "Document",
@@ -57,12 +55,10 @@
               "Title": "Program_FIXED.cs",
               "DocumentMoniker": "C:\\Users\\Robin\\Downloads\\Program_FIXED.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\Downloads\\Program_FIXED.cs",
-              "ToolTip": "C:\\Users\\Robin\\Downloads\\Program_FIXED.cs*",
-              "RelativeToolTip": "..\\..\\..\\..\\..\\Downloads\\Program_FIXED.cs*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\Robin\\Downloads\\Program_FIXED.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\Downloads\\Program_FIXED.cs",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-31T06:53:19.518Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-31T06:53:19.518Z"
             },
             {
               "$type": "Document",
@@ -124,7 +120,7 @@
               "RelativeDocumentMoniker": "Collatz-type problem v5\\Program.cs",
               "ToolTip": "C:\\Users\\Robin\\Desktop\\Code\\Visual Studio\\Projects\\Collatz-type problem\\Collatz-type problem v5\\Program.cs",
               "RelativeToolTip": "Collatz-type problem v5\\Program.cs",
-              "ViewState": "AgIAAAIAAAAAAAAAAAAAAA8AAABXAAAAAAAAAA==",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAAABsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-05-31T06:43:25.658Z",
               "EditorCaption": ""
