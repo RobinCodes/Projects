@@ -2,7 +2,7 @@
   "profiles": {
     "TwoNMod3Search": {
       "commandName": "Project",
-      "commandLineArgs": "1 1000000000000000 -3"
+      "commandLineArgs": "5823838568325 7155065319330 -15 --cores 10"
     }
   }
 }
