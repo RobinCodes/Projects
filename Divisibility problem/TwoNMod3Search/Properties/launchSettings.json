@@ -2,7 +2,7 @@
   "profiles": {
     "TwoNMod3Search": {
       "commandName": "Project",
-      "commandLineArgs": "10000000000000 4611686018427387903 -15 --cores 10"
+      "commandLineArgs": "10000000000001 100000000000000 -15 --auto-wheel --status-file sweep-15.status"
     }
   }
 }

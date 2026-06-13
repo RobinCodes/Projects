@@ -1,0 +1,24 @@
+TwoNMod3Search — run status
+generated   : 2026-06-13 18:37:22Z   (state: INTERRUPTED)
+started     : 2026-06-13 18:35:59Z
+elapsed     : 00:01:23  (83.1 s)
+command     : 10000000000001 100000000000000 -15 --auto-wheel --status-file sweep-15.status
+host cores  : 12 logical;  using 10
+mode        : single shift a = -15   (regime: open)
+n range     : [10000000000001, 100000000000000]   (width 90000000000000)
+output file : C:\Users\Robin\Desktop\Code\Visual Studio\Projects\Divisibility problem\TwoNMod3Search\bin\Debug\net8.0\results.txt
+
+[parameters]
+  cores=10  max-results=1000000  spill=on (8 MB)
+  factordb=on (timeout 8s)  ecm-budget=20s
+  wheel: mod=40060020, residues=7128576, density=17.79%, primes={3,5,7,11,13,23,29}, auto=yes
+
+[sweep]
+  state      : done
+  frontier n : 10014411240478
+  examined   : 2,553,705,472  (0.003% of range)
+  rate       : 30,977,692 n/s (avg 30,716,993)
+  solutions  : 0
+
+[solutions found] (0 most recent shown; full list in results.txt)
+  (none yet)
