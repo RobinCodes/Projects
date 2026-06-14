@@ -56,6 +56,7 @@ public sealed class Options
     public long TwoPrimeHi = 70;          // smaller-prime upper bound (range form); kept == MaxPrime
     public long[] TwoPrimeList;           // explicit list of smaller primes, or null for [lo, hi]
     public string TwoPrimeMode = "after"; // "before" | "after" | "alongside" the sweep
+    public bool TwoPrimeOnly;             // run ONLY the two-prime search (skip the sweep entirely)
     public int TwoPrimeCores = 1;         // cores given to two-prime when running alongside
     public int TwoPrimeEffortMs = -1;     // per-N_p ECM budget for two-prime; < 0 => use EcmBudgetMs
 
@@ -126,6 +127,7 @@ public static class Program
                         else { opt.TwoPrimeLo = 3; opt.TwoPrimeHi = lo1; opt.TwoPrimeList = null; }
                     }
                     break;
+                case "--two-prime-only": opt.TwoPrime = true; opt.TwoPrimeOnly = true; break;
                 case "--two-prime-mode":
                     if (++i >= args.Length) { Console.Error.WriteLine("error: --two-prime-mode needs before|after|alongside."); return 2; }
                     opt.TwoPrimeMode = args[i].ToLowerInvariant();
@@ -275,6 +277,7 @@ public static class Program
         Console.Error.WriteLine("      --max-prime P  shorthand for two-prime range 3..P (default 70)");
         Console.Error.WriteLine("      --two-prime-mode M   when to run it: before | after | alongside the sweep");
         Console.Error.WriteLine("                           (default after)");
+        Console.Error.WriteLine("      --two-prime-only     run ONLY the two-prime search; skip the sweep entirely");
         Console.Error.WriteLine("      --two-prime-cores N  cores given to two-prime when mode=alongside (default 1)");
         Console.Error.WriteLine("      --two-prime-effort S per-N_p ECM budget for two-prime, seconds (overrides");
         Console.Error.WriteLine("                           --ecm-seconds for this phase; raise it for hard primes)");
@@ -362,7 +365,7 @@ public sealed class Engine
     int _tpTotal;
     long[] _tpCurrentP;                                     // per-worker current prime
     readonly object _tpHardLock = new();
-    readonly List<string> _tpHard = new();                 // (a,p) not fully factored
+    readonly List<(long a, int p)> _tpHard = new();        // (shift, prime) not fully factored
     int _tpCoresUsed;
 
     // ---- per-shift wheel + small-prime table (single-shift sweep only) ----
@@ -465,6 +468,12 @@ public sealed class Engine
         };
 
         bool decided = cls.Kind != Regime.Open;
+        if (_o.TwoPrimeOnly)
+        {
+            Console.WriteLine("[--two-prime-only] skipping the sweep; running the two-prime search only.\n");
+            _doSweep = false;
+            return;
+        }
         if (decided && !_o.ForceSearch)
         {
             switch (cls.Kind)
@@ -847,6 +856,13 @@ public sealed class Engine
         if (_shiftCount <= TrackCap) _foundFlag = new byte[_shiftCount];
         else Console.WriteLine($"\nnote: {_shiftCount} shifts exceeds the {TrackCap} tracking cap; the per-shift no-result list will be summarised by count only.");
 
+        if (_o.TwoPrimeOnly)
+        {
+            Console.WriteLine("\n[--two-prime-only] skipping the sweep; running the two-prime search only.");
+            _doSweep = false;
+            return;
+        }
+
         Console.WriteLine($"\nsweep   : single-pass over m, one residue 2^(m-1) mod m per m, {_o.Cores} cores");
         if (!_o.ForceSearch)
             Console.WriteLine("          (decided shifts -1/0/2^j are not recorded by the sweep; see notes above)");
@@ -1123,7 +1139,7 @@ public sealed class Engine
         }
         if (!complete && !token.IsCancellationRequested)
         {
-            lock (_tpHardLock) _tpHard.Add($"a={a}, p={p}");
+            lock (_tpHardLock) _tpHard.Add((a, p));
             lock (_outputLock)
                 Console.WriteLine($"  (N_{p} = 2^{p - 1} - {a} not fully factored within budget; some solutions may be missed)");
         }
@@ -1145,13 +1161,50 @@ public sealed class Engine
         Console.WriteLine(sol == 0
             ? $"[two-prime] no two-prime solutions found ({done}/{_tpTotal} primes processed)."
             : $"[two-prime] {sol} two-prime solution(s) found ({done}/{_tpTotal} primes processed).");
-        lock (_tpHardLock)
-            if (_tpHard.Count > 0)
-            {
-                int show = Math.Min(_tpHard.Count, 12);
-                Console.WriteLine($"[two-prime] {_tpHard.Count} N_p not fully factored within budget (raise --two-prime-effort and re-run with a prime list):");
-                Console.WriteLine("            " + string.Join("; ", _tpHard.GetRange(0, show)) + (_tpHard.Count > show ? ", ..." : ""));
-            }
+
+        List<(long a, int p)> hard;
+        lock (_tpHardLock) hard = new List<(long, int)>(_tpHard);
+        if (hard.Count > 0)
+        {
+            int show = Math.Min(hard.Count, 12);
+            var items = new List<string>();
+            for (int i = 0; i < show; i++) items.Add($"a={hard[i].a},p={hard[i].p}");
+            Console.WriteLine($"[two-prime] {hard.Count} N_p not fully factored within budget: "
+                              + string.Join("; ", items) + (hard.Count > show ? ", ..." : ""));
+
+            var (newSec, cmds) = BuildRetryCommands();
+            Console.WriteLine($"[two-prime] to retry just those N_p with 3x the ECM budget ({newSec}s per N_p), run:");
+            foreach (var c in cmds) Console.WriteLine("    " + c);
+        }
+    }
+
+    // Build the "retry the exceptions" command(s): one per hard shift, listing exactly the
+    // primes whose N_p did not fully factor, at 3x the ECM budget that was just used, and
+    // with --two-prime-only so only that factoring runs (no re-sweep). Returns the budget
+    // (seconds) and the command lines.
+    (int newSec, List<string> cmds) BuildRetryCommands()
+    {
+        var cmds = new List<string>();
+        List<(long a, int p)> hard;
+        lock (_tpHardLock) hard = new List<(long, int)>(_tpHard);
+
+        int curMs = _o.TwoPrimeEffortMs >= 0 ? _o.TwoPrimeEffortMs : _o.EcmBudgetMs;
+        int newSec = curMs > 0 ? Math.Max(1, curMs * 3 / 1000) : 60; // 3x; if ECM was off, suggest 60s
+        if (hard.Count == 0) return (newSec, cmds);
+
+        var byShift = new SortedDictionary<long, SortedSet<int>>();
+        foreach (var (a, p) in hard)
+        {
+            if (!byShift.TryGetValue(a, out var s)) { s = new SortedSet<int>(); byShift[a] = s; }
+            s.Add(p);
+        }
+        string extra = _o.UseFactorDb ? "" : " --no-factordb";
+        foreach (var kv in byShift)
+        {
+            string primes = string.Join(",", kv.Value);
+            cmds.Add($"TwoNMod3Search {_o.StartN} {_o.EndN} {kv.Key} --two-prime {primes} --two-prime-only --two-prime-effort {newSec}{extra}");
+        }
+        return (newSec, cmds);
     }
 
     void RecordRecent(string line)
@@ -1535,12 +1588,18 @@ public sealed class Engine
             sb.AppendLine($"  primes     : {Interlocked.Read(ref _tpDone)} / {_tpTotal} done");
             sb.AppendLine($"  solutions  : {Interlocked.Read(ref _tpSolutions)}");
             string cur = TpCurrentDesc(); if (cur.Length > 0) sb.AppendLine($"  current    :{cur}");
-            lock (_tpHardLock)
-                if (_tpHard.Count > 0)
-                {
-                    int show = Math.Min(_tpHard.Count, 12);
-                    sb.AppendLine($"  hard       : {_tpHard.Count} not fully factored: {string.Join("; ", _tpHard.GetRange(0, show))}{(_tpHard.Count > show ? ", ..." : "")}");
-                }
+            List<(long a, int p)> hard;
+            lock (_tpHardLock) hard = new List<(long, int)>(_tpHard);
+            if (hard.Count > 0)
+            {
+                int show = Math.Min(hard.Count, 12);
+                var items = new List<string>();
+                for (int i = 0; i < show; i++) items.Add($"a={hard[i].a},p={hard[i].p}");
+                sb.AppendLine($"  hard       : {hard.Count} not fully factored: {string.Join("; ", items)}{(hard.Count > show ? ", ..." : "")}");
+                var (newSec, cmds) = BuildRetryCommands();
+                sb.AppendLine($"  retry (3x ECM budget, {newSec}s per N_p):");
+                foreach (var c in cmds) sb.AppendLine("    " + c);
+            }
             sb.AppendLine();
         }
 
@@ -2503,5 +2562,5 @@ public static class Factorizer
 }
 
 // Optimal for sweep: TwoNMod3Search 10000000000001 100000000000000 -15 --auto-wheel --status-file sweep-15.status
-// Optimal for factoring: TwoNMod3Search 1 100 -15 --two-prime 3 250 --two-prime-effort 300 --status-file factor-15.status
-// Example: TwoNMod3Search 1 100 -15 --two-prime 181,199,211 --two-prime-effort 1200
+// Optimal for factoring: TwoNMod3Search 1 100 -15 --two-prime 3 2000 --two-prime-effort 300 --status-file factor-15.status
+// Example of running for specific numbers to factor: TwoNMod3Search 1 100 -15 --two-prime 181,199,211 --two-prime-effort 1200

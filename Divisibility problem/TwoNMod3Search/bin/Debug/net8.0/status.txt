@@ -1,0 +1,33 @@
+TwoNMod3Search — run status
+generated   : 2026-06-14 07:33:43Z   (state: INTERRUPTED)
+started     : 2026-06-14 07:33:02Z
+elapsed     : 00:00:40  (40.5 s)
+command     : 1 100 -15 --two-prime 3 1000 --two-prime-effort 10
+host cores  : 12 logical;  using 10
+mode        : single shift a = -15   (regime: open)
+n range     : [1, 100]   (width 100)
+output file : C:\Users\Robin\Desktop\Code\Visual Studio\Projects\Divisibility problem\TwoNMod3Search\bin\Debug\net8.0\results.txt
+
+[parameters]
+  cores=10  max-results=1000000  spill=on (8 MB)
+  factordb=on (timeout 8s)  ecm-budget=20s
+  two-prime: mode=after, cores=10, primes=[3..1000], effort=10s
+  wheel: mod=4620, residues=960, density=20.78%, primes={3,5,7,11}, auto=no
+
+[sweep]
+  state      : done
+  frontier n : 100
+  examined   : 21  (21.000% of range)
+  rate       : 1 n/s (avg 1)
+  solutions  : 0
+
+[two-prime]
+  state      : done
+  primes     : 48 / 49 done
+  solutions  : 0
+  hard       : 7 not fully factored: a=-15,p=503; a=-15,p=587; a=-15,p=541; a=-15,p=743; a=-15,p=619; a=-15,p=593; a=-15,p=557
+  retry (3x ECM budget, 30s per N_p):
+    TwoNMod3Search 1 100 -15 --two-prime 503,541,557,587,593,619,743 --two-prime-only --two-prime-effort 30
+
+[solutions found] (0 most recent shown; full list in results.txt)
+  (none yet)

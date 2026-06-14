@@ -27,15 +27,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "TwoNMod3Search",
+              "Title": "TwoNMod3Search.csproj",
               "DocumentMoniker": "C:\\Users\\Robin\\Desktop\\Code\\Visual Studio\\Projects\\Divisibility problem\\TwoNMod3Search\\TwoNMod3Search.csproj",
               "RelativeDocumentMoniker": "TwoNMod3Search\\TwoNMod3Search.csproj",
               "ToolTip": "C:\\Users\\Robin\\Desktop\\Code\\Visual Studio\\Projects\\Divisibility problem\\TwoNMod3Search\\TwoNMod3Search.csproj",
               "RelativeToolTip": "TwoNMod3Search\\TwoNMod3Search.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2026-06-13T18:30:10.399Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-06-13T18:30:10.399Z"
             },
             {
               "$type": "Document",
@@ -45,7 +44,7 @@
               "RelativeDocumentMoniker": "TwoNMod3Search\\Program.cs",
               "ToolTip": "C:\\Users\\Robin\\Desktop\\Code\\Visual Studio\\Projects\\Divisibility problem\\TwoNMod3Search\\Program.cs",
               "RelativeToolTip": "TwoNMod3Search\\Program.cs",
-              "ViewState": "AgIAAK0JAAAAAAAAAAAUwMcJAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAOcJAAAAAAAAAAAkwP8JAABLAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-06-13T18:29:56.763Z",
               "EditorCaption": ""
@@ -60,8 +59,7 @@
               "RelativeToolTip": "TwoNMod3Search\\README.md",
               "ViewState": "AgIAAEIBAAAAAAAAAADwv2cBAABYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
-              "WhenOpened": "2026-06-13T12:36:21.322Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-06-13T12:36:21.322Z"
             }
           ]
         }
