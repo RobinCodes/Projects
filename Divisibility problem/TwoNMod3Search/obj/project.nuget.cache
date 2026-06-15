@@ -1,8 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "OrhHRVtTVnw=",
+  "dgSpecHash": "CFz5rZAFV9A=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Robin\\Desktop\\Code\\Visual Studio\\Projects\\Divisibility problem\\TwoNMod3Search\\TwoNMod3Search.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\roven\\Desktop\\Coding\\Projects\\Divisibility problem\\TwoNMod3Search\\TwoNMod3Search.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\roven\\.nuget\\packages\\microsoft.netcore.app.ref\\8.0.28\\microsoft.netcore.app.ref.8.0.28.nupkg.sha512",
+    "C:\\Users\\roven\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\8.0.28\\microsoft.windowsdesktop.app.ref.8.0.28.nupkg.sha512",
+    "C:\\Users\\roven\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\8.0.28\\microsoft.aspnetcore.app.ref.8.0.28.nupkg.sha512",
+    "C:\\Users\\roven\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\8.0.28\\microsoft.netcore.app.host.win-x64.8.0.28.nupkg.sha512"
+  ],
   "logs": []
 }

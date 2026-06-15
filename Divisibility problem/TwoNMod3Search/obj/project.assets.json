@@ -8,32 +8,24 @@
     "net8.0": []
   },
   "packageFolders": {
-    "C:\\Users\\Robin\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\roven\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Robin\\Desktop\\Code\\Visual Studio\\Projects\\Divisibility problem\\TwoNMod3Search\\TwoNMod3Search.csproj",
+      "projectUniqueName": "C:\\Users\\roven\\Desktop\\Coding\\Projects\\Divisibility problem\\TwoNMod3Search\\TwoNMod3Search.csproj",
       "projectName": "TwoNMod3Search",
-      "projectPath": "C:\\Users\\Robin\\Desktop\\Code\\Visual Studio\\Projects\\Divisibility problem\\TwoNMod3Search\\TwoNMod3Search.csproj",
-      "packagesPath": "C:\\Users\\Robin\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Robin\\Desktop\\Code\\Visual Studio\\Projects\\Divisibility problem\\TwoNMod3Search\\obj\\",
+      "projectPath": "C:\\Users\\roven\\Desktop\\Coding\\Projects\\Divisibility problem\\TwoNMod3Search\\TwoNMod3Search.csproj",
+      "packagesPath": "C:\\Users\\roven\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\roven\\Desktop\\Coding\\Projects\\Divisibility problem\\TwoNMod3Search\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\Robin\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\roven\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -70,6 +62,24 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.AspNetCore.App.Ref",
+            "version": "[8.0.28, 8.0.28]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Host.win-x64",
+            "version": "[8.0.28, 8.0.28]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Ref",
+            "version": "[8.0.28, 8.0.28]"
+          },
+          {
+            "name": "Microsoft.WindowsDesktop.App.Ref",
+            "version": "[8.0.28, 8.0.28]"
+          }
+        ],
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
