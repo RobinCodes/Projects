@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TwoNMod3Search")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6506766cfdd4759a7783152fce2f4582b0cb4c0a")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0730b83bcb2ec94a5dcf3b376326f58e11003ab0")]
 [assembly: System.Reflection.AssemblyProductAttribute("TwoNMod3Search")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TwoNMod3Search")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
